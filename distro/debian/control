@@ -1,18 +1,15 @@
-Source: ottemplate
+Source: libnlopt-cxx-dev
 Section: science
 Priority: optional
 Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
 Uploaders: Christophe Prud'homme <prudhomm@debian.org>, Denis Barbier <barbier@debian.org>
-Build-Depends: debhelper (>= 8), dh-python, quilt, cmake, gfortran, libopenturns-dev, python-openturns, python-dev, python3-openturns, python3-dev, swig (>= 2.0.9), docbook-to-man, texlive, texlive-latex-extra, poppler-utils
+Build-Depends: debhelper (>= 8), quilt, cmake, gfortran 
 Standards-Version: 3.9.6
 Homepage: http://trac.openturns.org/
-X-Python-Version: current
-X-Python3-Version: current
 
-Package: ottemplate
+Package: libnlopt-cxx-dev
 Section: libs
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, python-openturns, python3-openturns, python
-Description: openturns module ottemplate
- Template module for OpenTURNS
- It provides useful features
+Depends: ${misc:Depends}, libnlopt-dev
+Description: dummy libnlopt-cxx-dev
+ Dummy package for libnlopt-cxx-dev
